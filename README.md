@@ -49,21 +49,21 @@ Copy it as a clean tree, a Markdown block, a path list or JSON. No sign-in, no t
 
 ## Features
 
-| | |
-| --- | --- |
-| 🌳 **Instant tree** | The whole repository with folder and file-type icons and file sizes |
-| 📋 **4 copy formats** | Terminal-style **Tree**, **Markdown** code block, **Paths** list, or **JSON** |
-| 💾 **Download** | Save the structure as `.txt`, `.md` or `.json` |
-| 🔍 **Search** | Filter by name, extension or path, with matches highlighted |
-| 🌿 **Any branch** | Reads the branch from the URL (even `feature/login`) or uses the default branch |
-| 📁 **Folder scope** | Opens in the folder you're browsing, and one click shows the whole repo |
-| 🧹 **Filters** | Exclude patterns, hide dotfiles, max depth, folders first, folders-only view |
-| 🔗 **Jump to GitHub** | Click any file to open it; hover to copy its path |
-| ⚡ **Fast on huge repos** | Virtualized list, tested with 24,000+ files |
-| 🔓 **No sign-in** | Works on any public repo straight away, with no token or account |
-| 🛟 **Never stuck** | Results are cached for 30 minutes, and a backup source takes over if GitHub is busy |
-| 🌗 **Light & dark** | Follows your system, or pick one |
-| ⌨️ **Keyboard friendly** | `Alt+Shift+G` opens it, `/` searches, `Esc` clears |
+|                           |                                                                                     |
+| ------------------------- | ----------------------------------------------------------------------------------- |
+| 🌳 **Instant tree**       | The whole repository with folder and file-type icons and file sizes                 |
+| 📋 **4 copy formats**     | Terminal-style **Tree**, **Markdown** code block, **Paths** list, or **JSON**       |
+| 💾 **Download**           | Save the structure as `.txt`, `.md` or `.json`                                      |
+| 🔍 **Search**             | Filter by name, extension or path, with matches highlighted                         |
+| 🌿 **Any branch**         | Reads the branch from the URL (even `feature/login`) or uses the default branch     |
+| 📁 **Folder scope**       | Opens in the folder you're browsing, and one click shows the whole repo             |
+| 🧹 **Filters**            | Exclude patterns, hide dotfiles, max depth, folders first, folders-only view        |
+| 🔗 **Jump to GitHub**     | Click any file to open it; hover to copy its path                                   |
+| ⚡ **Fast on huge repos** | Virtualized list, tested with 24,000+ files                                         |
+| 🔓 **No sign-in**         | Works on any public repo straight away, with no token or account                    |
+| 🛟 **Never stuck**        | Results are cached for 30 minutes, and a backup source takes over if GitHub is busy |
+| 🌗 **Light & dark**       | Follows your system, or pick one                                                    |
+| ⌨️ **Keyboard friendly**  | `Alt+Shift+G` opens it, `/` searches, `Esc` clears                                  |
 
 ---
 
@@ -182,12 +182,20 @@ README.md
   "name": "my-app",
   "type": "folder",
   "children": [
-    { "name": "public", "type": "folder", "children": [{ "name": "favicon.svg", "type": "file" }] },
+    {
+      "name": "public",
+      "type": "folder",
+      "children": [{ "name": "favicon.svg", "type": "file" }]
+    },
     {
       "name": "src",
       "type": "folder",
       "children": [
-        { "name": "components", "type": "folder", "children": [{ "name": "Button.tsx", "type": "file" }] },
+        {
+          "name": "components",
+          "type": "folder",
+          "children": [{ "name": "Button.tsx", "type": "file" }]
+        },
         { "name": "App.tsx", "type": "file" },
         { "name": "main.tsx", "type": "file" }
       ]
@@ -208,26 +216,26 @@ README.md
 
 Open settings with the sliders icon in the top-right of the popup. Your settings are saved, and they sync across your Chrome profiles if you use Chrome Sync.
 
-| Setting | What it does | Default |
-| --- | --- | --- |
-| **Default format** | Tree, Markdown, Paths or JSON | Tree |
-| **Include repo name as root** | Adds `my-app/` as the first line | On |
-| **Slash after folder names** | `src/` instead of `src` | On |
-| **Folders first** | Folders above files at each level | On |
-| **Hide dotfiles** | Hides `.github`, `.gitignore`, `.env`… | Off |
-| **Max depth** | Limit how many levels deep the tree goes | Unlimited |
-| **Exclude** | Comma-separated names or globs to hide | `node_modules, .DS_Store` |
-| **Theme** | System, Light or Dark | System |
+| Setting                       | What it does                             | Default                   |
+| ----------------------------- | ---------------------------------------- | ------------------------- |
+| **Default format**            | Tree, Markdown, Paths or JSON            | Tree                      |
+| **Include repo name as root** | Adds `my-app/` as the first line         | On                        |
+| **Slash after folder names**  | `src/` instead of `src`                  | On                        |
+| **Folders first**             | Folders above files at each level        | On                        |
+| **Hide dotfiles**             | Hides `.github`, `.gitignore`, `.env`…   | Off                       |
+| **Max depth**                 | Limit how many levels deep the tree goes | Unlimited                 |
+| **Exclude**                   | Comma-separated names or globs to hide   | `node_modules, .DS_Store` |
+| **Theme**                     | System, Light or Dark                    | System                    |
 
 **Exclude pattern examples**
 
-| Pattern | Hides |
-| --- | --- |
-| `node_modules` | Any file or folder named `node_modules` |
-| `*.test.ts` | All files ending in `.test.ts` |
-| `docs/` | Folders named `docs` (the trailing `/` means folders only) |
-| `src/**/fixtures` | `fixtures` anywhere under `src` |
-| `*.lock, *.log` | Lock files and logs |
+| Pattern           | Hides                                                      |
+| ----------------- | ---------------------------------------------------------- |
+| `node_modules`    | Any file or folder named `node_modules`                    |
+| `*.test.ts`       | All files ending in `.test.ts`                             |
+| `docs/`           | Folders named `docs` (the trailing `/` means folders only) |
+| `src/**/fixtures` | `fixtures` anywhere under `src`                            |
+| `*.lock, *.log`   | Lock files and logs                                        |
 
 The **folders-only** button in the toolbar and the **"N hidden"** counter in the footer show you what's being left out.
 
@@ -263,16 +271,16 @@ Build the tree, apply filters, show it (and copy it)
 
 ## Permissions & privacy
 
-| Permission | Why |
-| --- | --- |
+| Permission  | Why                                                                                           |
+| ----------- | --------------------------------------------------------------------------------------------- |
 | `activeTab` | Read the current tab's URL, **only when you click the extension**, to know which repo to show |
-| `storage` | Save your settings and a 30-minute cache of repo trees, in your own browser |
+| `storage`   | Save your settings and a 30-minute cache of repo trees, in your own browser                   |
 
 - ❌ No data collection, analytics, tracking or ads
 - ❌ No accounts, passwords or tokens
 - ✅ Only talks to `api.github.com`, plus `data.jsdelivr.com` as a backup, to fetch public file lists
 
-📄 Full policy: **[Privacy Policy](https://shashwat-06.github.io/YOUR-PRIVACY-REPO/privacy.html)**
+📄 Full policy: **[Privacy Policy](https://shashwat-06.github.io/gitStructPrivacyPolicy/)**
 
 ---
 
@@ -296,12 +304,12 @@ npm run build
 
 **Scripts**
 
-| Command | What it does |
-| --- | --- |
-| `npm run dev` | Runs the popup in a normal browser tab with hot reload. Add `?url=https://github.com/owner/repo` to load a repo |
-| `npm run build` | Type-checks and builds the extension into `dist/` |
-| `npm run zip` | Builds and creates `gitstruct.zip`, ready for the Chrome Web Store |
-| `npm run lint` | Runs ESLint |
+| Command         | What it does                                                                                                    |
+| --------------- | --------------------------------------------------------------------------------------------------------------- |
+| `npm run dev`   | Runs the popup in a normal browser tab with hot reload. Add `?url=https://github.com/owner/repo` to load a repo |
+| `npm run build` | Type-checks and builds the extension into `dist/`                                                               |
+| `npm run zip`   | Builds and creates `gitstruct.zip`, ready for the Chrome Web Store                                              |
+| `npm run lint`  | Runs ESLint                                                                                                     |
 
 **Tech stack:** TypeScript · React 19 · Vite · Chrome Extensions Manifest V3 · plain CSS (no UI framework)
 
@@ -367,7 +375,7 @@ Released under the [MIT License](LICENSE).
 
 <div align="center">
 
-Made by [Shashwat Ojha](https://github.com/Shashwat-06) · [work.shashwatojha@gmail.com](mailto:work.shashwatojha@gmail.com)
+Made by [Shashwat](https://github.com/Shashwat-06) · [work.shashwatojha@gmail.com](mailto:work.shashwatojha@gmail.com)
 
 If gitStruct saves you time, please ⭐ the repo and [leave a review](https://chromewebstore.google.com/detail/pbalofllkaiodaggbhnnaakghapdjnda) on the Chrome Web Store!
 
